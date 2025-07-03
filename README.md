@@ -37,7 +37,7 @@ Auto Scaling adjusts the number of EC2 instances based on:
 - Network I/O
 - Custom CloudWatch metrics
 
-## 🧠 Internal DNS Mapping
+##  Internal DNS Mapping
 
 Private DNS records are configured in Route 53:
 - `db01` ➜ MySQL instance IP
