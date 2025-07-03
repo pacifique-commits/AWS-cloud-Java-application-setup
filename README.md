@@ -2,7 +2,7 @@
 
 This project demonstrates the deployment of a scalable Java web application on AWS using a complete DevOps approach. The infrastructure is built with high availability, auto scaling, and DNS management in mind.
 
-## 🛠 Tools & Services Used
+## Tools & Services Used
 
 - **Amazon EC2**: Hosts the Java application using Apache Tomcat.
 - **Auto Scaling Group**: Ensures high availability by automatically adjusting the number of EC2 instances.
@@ -12,7 +12,7 @@ This project demonstrates the deployment of a scalable Java web application on A
 - **S3 Bucket**: Stores static assets (if needed).
 - **Private DNS Zones**: Manages internal resolution for services (e.g., database, cache, MQ).
 
-## 🔧 Architecture Overview
+## Architecture Overview
 
 1. **Users** access the application through a domain registered in **GoDaddy**, mapped to the **ALB endpoint** using **Route 53**.
 2. **ALB** receives incoming HTTPS requests and forwards them over **port 8080** to the **target group** of EC2 instances.
@@ -24,7 +24,7 @@ This project demonstrates the deployment of a scalable Java web application on A
    These services reside in a private security group with internal DNS names (e.g., `db01`, `mc01`, `rmq01`) resolved via **Route 53 private hosted zones**.
 5. Static files or assets (if required) are served from an **S3 bucket**.
 
-##  Security Groups
+## Security Groups
 
 - **ALB Security Group**: Allows HTTPS (port 443) traffic from the internet.
 - **App Security Group**: Accepts traffic only from the ALB on port 8080.
