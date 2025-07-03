@@ -46,11 +46,3 @@ Private DNS records are configured in Route 53:
 
 These mappings allow the application tier to access backend services using consistent DNS names.
 
-## 📁 Repository Structure
-
-aws-java-app/
-├── scripts/ # Automation and setup scripts
-├── app/ # Java/Tomcat application source
-├── terraform/ or cloudformation/ # (optional) Infrastructure as Code files
-├── docs/ # Architecture diagrams and documentation
-└── README.md # Project overview
